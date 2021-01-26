@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Image Slider</title>
+</head>
+
+<body id="b">
+
+    <div id="mode">
+        <button onclick="darkMode()" id="darkMode">Dark Mode</button>
+    </div>
+
+    <div class="slider">
+        <button class="Control" id="pre" onclick="previousImage()">&lt;</button>
+        <img src="./slider images/pexels-baskin-creative-studios-1766838.jpg" width="50%" alt="" id="1" class="show">
+        <img src="./slider images/pexels-markus-spiske-117843.jpg" width="50%" alt="" id="2" class="hidden">
+        <img src="./slider images/pexels-martin-damboldt-814499.jpg" width="50%" alt="" id="3" class="hidden">
+        <img src="./slider images/pexels-pixabay-255441.jpg" width="50%" alt="" id="4" class="hidden">
+        <img src="./slider images/pexels-pixabay-38537.jpg" width="50%" alt="" id="5" class="hidden">
+        <button class="Control" id="next" onclick="nextImage()">&gt;</button>
+
+
+    </div>
+
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
