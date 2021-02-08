@@ -1,8 +1,9 @@
 var body = "";
 var but = "";
-var getImage = "";
-var imageId = ["1", "2", "3", "4", "5"];
-
+var imageAddress = ["./slider images/1.jpg", "slider images/2.jpg", "slider images/3.jpg", "slider images/4.jpg"];
+let counterF = 0;
+let counterR = 3;
+// __________ Function to implement different screen modes________
 function darkMode() {
 but = document.getElementById("darkMode");
 
@@ -24,17 +25,25 @@ but = document.getElementById("darkMode");
 
   }
 }
+// ______________Ending Screen mode_________________
+// ____________Function for Next Image_____________
 function nextImage() {
-   for(index = 1; index<=imageId.length; index++ ){
-       switch (imageId) {
-           case "1":
-               
-               
-               break;
-       
-           default:
-               break;
-       }
-
-   }
+  let getImage = document.getElementById("1");
+  getImage.src = imageAddress[counterF];
+  counterF++;
+  if (counterF === counterR) {
+    counterF=0;
+    
+  }
 }
+// ______Function For Previous Image_______
+function previousImage() {
+  let getImage = document.getElementById("1");
+  getImage.src = imageAddress[counterR];
+  counterR--;
+  if (counterR === counterF) {
+    counterR=3;
+    
+  }
+}
+// __________Ending Java Script__________

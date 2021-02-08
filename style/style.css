@@ -2,9 +2,11 @@ body{
     background-color: #9dc5c3;
     background-image: linear-gradient(315deg, #9dc5c3 0%, #5e5c5c 74%);
 }
-.hidden{
-    display:none;
-}
+/* Creating Animations */
+
+
+
+
 .show{
     display: inline-flexbox;
 }
@@ -32,7 +34,7 @@ background-image: linear-gradient(147deg, #000000 0%, #434343 100%);
 justify-content: right;
 }
 .Control{
-    background-color:gainsboro;
+    background-color:black;
     font-weight: bolder;
     color: honeydew;
     
